@@ -1,6 +1,6 @@
 <?php
 
-include_once "./Settings.php";
+include_once "./settings.php";
 
 class FantammDB extends mysqli {
 	
