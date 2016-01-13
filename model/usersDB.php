@@ -1,7 +1,7 @@
 <?php
 
-include_once '/model/user.php';
-include_once '/model/FantammDB.php';
+include_once './model/user.php';
+include_once './model/FantammDB.php';
 
 class usersDB
 {
