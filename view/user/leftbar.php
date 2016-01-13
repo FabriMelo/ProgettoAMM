@@ -2,7 +2,7 @@
   
 <div id="columnB">
       <div class="content bg1">
-          <h2>UTENTE REGISTRATO</h2>
+          <h2>Le ultime novità</h2>
       <p><strong>Novità nello shop!</strong> <br />
     Aggiunta maglia Milan Casa - Taglie XS,S,M,L,XL - 45$ <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ?  : false; ?> <a href="index.php?page=products">Vai alla galleria&#8230;</a></p>
       <p><strong>Novità nello shop! </strong><strong><br />

@@ -32,7 +32,7 @@
                    
                         <img title="milan" alt="Foto" src="images/italia.jpg" width="140" height="140"/>
                     
-                        <img title="milan" alt="Foto" src="images/scarpa1.jpg" width="140" height="140"/>
+                        <img title="milan" alt="Foto" src="images/scarpa2.jpg" width="140" height="140"/>
                    
                    
       </div>

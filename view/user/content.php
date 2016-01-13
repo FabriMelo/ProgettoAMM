@@ -15,11 +15,11 @@
       <p>Abbiamo maglie da calcio, pantaloncini, e scarpe</p>
       <p>Guarda la <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'class="active"' : false; ?> <a href="index.php?page=products">Galleria</a> completa
           	<div id="Galleria">
-                        <img title="milan" alt="Foto" src="images/milan.jpg" width="140" height="140"/>
+                       <img title="milan" alt="Foto" src="images/milan.jpg" width="140" height="140"/>
                    
-                        <img title="milan" alt="Foto" src="images/milan.jpg" width="140" height="140"/>
+                        <img title="milan" alt="Foto" src="images/italia.jpg" width="140" height="140"/>
                     
-                        <img title="milan" alt="Foto" src="images/milan.jpg" width="140" height="140"/>
+                        <img title="milan" alt="Foto" src="images/scarpa2.jpg" width="140" height="140"/>
                                       
       </div>
       </div>
