@@ -3,8 +3,38 @@
     <div id="columnA">
         <div class="content bg1">
             <h2>Il tuo profilo</h2>
-            <p>Nome: <?php echo $_SESSION["username"]; ?></p>
-            <p>Cognome: <?php echo "./model/user::getUsername()"; ?></p>
+            
+            <?php  
+        $username= $_SESSION["username"]; 
+        $db=  FantammDB::instance();
+        $query= "SELECT email, name, surname, street, number, city, state FROM users WHERE username= $username";
+        $result= $db->query($query);
+        
+        if($db->errno >0){
+            
+        erorr_log("Errore nell'esecuzione della query $db->errno : $db->error",0);
+        }
+           else{
+        
+   
+        while($row= $result->fetch_row())
+        {
+         $email=$row[0];
+         $name=$row[1];
+         $surname=$row[2];
+         $street=$row[3];
+         $number=$row[4];
+         $city=$row[5];
+         $state=$row[6];
+         FantammDB::chiudiDB();
+           }}
+       ?>
+            
+            
+            <p>Nome: <?php echo $name; ?></p>
+            <p>Cognome: <?php echo $surname; ?></p>
+            <p>Email: <?php echo $email; ?></p>
+            <p>Indirizzo: <?php echo $street+" "+$number+", "+$city+", "+$state; ?></p>
         </div>
     </div>
   </div>
