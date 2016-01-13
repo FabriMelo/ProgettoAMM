@@ -1,30 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
-
-<head>
-  <title>Your Company Name</title>
-  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="./css/myCss.css" />
-
-</head>
-
-<body>
-<div id="content">
-
-  <div id="header"> 
-    <div id="title"> 
-      <h1>Your Company Name</h1>
-    </div>
-    <img src="images/bg/header_left.jpg" style="margin-left: 10%;"/></div>
-    
-    <div id="mainMenu">
-    <ul class="floatLeft">
-      <li><a href="" class="here">home</a></li>
-      <li><a href="">about us</a></li>
-      <li><a href="">news</a></li>
-      <li><a href="">contact</a></li>
-      <li><a href="" class="last">links</a></li>
-    </ul>
-  </div>
+<div id="header">
+  <h1>CalciAMM- UTENTE REGISTRATO</h1>
+  <h2>Designed by Fabrizio Meloni  </h2>
+</div>
+<div id="menu">
+  <ul>
+    <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'home') ? 'class="active"' : false; ?>> <a href="index.php?page=home">Home</a></li>
+    <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'class="active"' : false; ?>> <a href="index.php?page=products">Products</a></li>
+    <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'carrello') ? 'class="active"' : false; ?>><a href="index.php?page=carrello">Carrello</a></li>
+    <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'about') ? 'class="active"' : false; ?>><a href="index.php?page=about">About Us</a></li>
+    <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'profilo') ? 'class="active"' : false; ?>><a href="index.php?page=profilo">Il tuo profilo</a></li>
+    <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'logout') ? 'class="active"' : false; ?>><a href="index.php?page=logout">Logout</a></li>
+  </ul>
+</div>

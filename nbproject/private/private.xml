@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Fabri/Documents/Xampp/htdocs/Progetto/model/user.php</file>
+            <file>file:/C:/Users/Fabri/Documents/Xampp/htdocs/Progetto/view/guest/signUp.php</file>
+            <file>file:/C:/Users/Fabri/Documents/Xampp/htdocs/Progetto/model/FantammDB.php</file>
+            <file>file:/C:/Users/Fabri/Documents/Xampp/htdocs/Progetto/settings.php</file>
+        </group>
     </open-files>
 </project-private>

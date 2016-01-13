@@ -7,11 +7,31 @@
         private $footer;
         private $endPage;
         private $staticPage;
+        private $products;
+        private $signUp;
+        private $registrazioneAvvenuta;
+        private $notAuthorized;
+        private $carrello;
+        private $profilo;
+        private $logout;
+        private $photo;
+        private $loginError;
         
         public function __construct()
         {
             
-        }    
+        }  
+        
+        
+           public function getStartPage()
+        {
+            return $this->startPage;
+        }
+        
+        public function setStartPage($startPage)
+        {
+            $this->startPage = $startPage;
+        }
         
         public function getHeader()
         {
@@ -46,38 +66,105 @@
         {
             $this->leftbar = $leftbar;
         }
- 
         
-        /*public function getStaticPage()
+        public function getAbout()
         {
-            return $this->staticPage;
+            return $this->about;
+        }
+        public function setAbout($about)
+        {
+            $this->about = $about;
         }
         
-        public function setStaticPage($staticPage)
+          public function getProducts()
         {
-            $this->staticPage = $staticPage;
-        }*/
-        
-        /*
-        public function getStartPage()
+            return $this->products;
+        }
+        public function setProducts($products)
         {
-            return $this->startPage;
+            $this->products = $products;
         }
         
-        public function setStartPage($startPage)
+            public function getSignUp()
         {
-            $this->startPage = $startPage;
+            return $this->signUp;
+        }
+        public function setSignUp($signUp)
+        {
+            $this->signUp = $signUp;
+        }
+        
+            public function getRegistrazioneAvvenuta()
+        {
+            return $this->registrazioneAvvenuta;
+        }
+        public function setRegistrazioneAvvenuta($registrazioneAvvenuta)
+        {
+            $this->registrazioneAvvenuta = $registrazioneAvvenuta;
+        }
+        
+        public function getNotAuthorized()
+        {
+            return $this->notAuthorized;
+        }
+        
+        public function setNotAuthorized($notAuthorized)
+        {
+            $this->notAuthorized = $notAuthorized;
+        }
+        
+        public function getCarrello()
+        {
+            return $this->carrello;
+        }
+        
+        public function setCarrello($carrello)
+        {
+            $this->carrello = $carrello;
+        }
+        
+        public function getProfilo()
+        {
+            return $this->profilo;
+        }
+        
+        public function setProfilo($profilo)
+        {
+            $this->profilo = $profilo;
+        }
+        
+        public function getLogout()
+        {
+            return $this->logout;
+        }
+        
+        public function setLogout($logout)
+        {
+            $this->logout = $logout;
+        }
+        
+        public function getPhoto()
+        {
+            return $this->photo;
+        }
+        
+        public function setPhoto($photo)
+        {
+            $this->photo = $photo;
+        }
+        
+        public function getLoginError()
+        {
+            return $this->loginError;
+        }
+        
+        public function setLoginError($loginError)
+        {
+            $this->loginError = $loginError;
         }
        
-        
-        public function getEndPage()
-        {
-            return $this->endPage;
-        }
-        public function setEndPage($endPage)
-        {
-            $this->endPage = $endPage;
-        }*/
+     
+
     }
     
 ?>
