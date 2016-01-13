@@ -1,7 +1,7 @@
 <?php 
-include_once '/view/createView.php';
-include_once '/model/FantammDB.php';
-include_once '/model/usersDB.php';
+include_once './view/createView.php';
+include_once './model/FantammDB.php';
+include_once './model/usersDB.php';
 
 class userController{
  
