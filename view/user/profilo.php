@@ -12,7 +12,7 @@
         
         if($db->errno >0){
             
-        erorr_log("Errore nell'esecuzione della query $db->errno : $db->error",0);
+        error_log("Errore nell'esecuzione della query $db->errno : $db->error",0);
         }
            else{
         
