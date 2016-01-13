@@ -12,8 +12,8 @@
     public static $user = "meloniFabrizio";
     public static $password = "macaco4973";
     public static $host = "localhost";
-    //public static $db = "amm15_meloniFabrizio";
-    public static $db = "fantamm";
+    public static $db = "amm15_meloniFabrizio";
+    //public static $db = "fantamm";
 
 
     public static function getApplicationPath() 
@@ -26,7 +26,7 @@
                     break;
                 case 'spano.sc.unica.it':
                     // configurazione pubblica
-                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/amm2014/deianaRoberto/CM/';
+                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/amm2015/meloniFabrizio/';
                     break;
                 default:
                     self::$appPath = '';
