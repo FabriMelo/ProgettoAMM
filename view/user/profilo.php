@@ -7,7 +7,7 @@
             <?php  
         $username= $_SESSION["username"]; 
         $db=  FantammDB::instance();
-        $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= $username";
+        $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE 'username'= $username";
         $result= $db->query($query);
         
         if($db->errno >0){
