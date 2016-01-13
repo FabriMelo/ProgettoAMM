@@ -1,4 +1,4 @@
-<?php include_once '/model/FantammDB.php';
+<?php include_once './model/FantammDB.php';
 ?>
 <div id="content">
     <div id="columnA">
