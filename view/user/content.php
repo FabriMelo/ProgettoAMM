@@ -3,7 +3,7 @@
   <div id="content">
     <div id="columnA">
         <div class="content bg1">
-      <h2>Benvenuto su CalciAMM - <?php echo $_SESSION[username]; ?></h2>
+      <h2>Benvenuto su CalciAMM - <?php echo $_SESSION["username"]; ?></h2>
       <p>CalciAMM è il migliore sito di e-commerce per magliette e completi da calcio <strong>originali</strong>. Sei già iscritto! Puoi accedere a tutte le funzionalità del sito!
        Puoi effettuare il <a href="./index.php?page=logout">Logout</a>
        
