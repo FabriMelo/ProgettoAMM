@@ -9,7 +9,7 @@
         private $staticPage;
         private $products;
         private $signUp;
-        private $registrazioneAvvenuta;
+        private $successfullSignUp;
         private $notAuthorized;
         private $carrello;
         private $profilo;
@@ -94,13 +94,13 @@
             $this->signUp = $signUp;
         }
         
-            public function getRegistrazioneAvvenuta()
+            public function getSuccessfullSignUp()
         {
-            return $this->registrazioneAvvenuta;
+            return $this->successfullSignUp;
         }
-        public function setRegistrazioneAvvenuta($registrazioneAvvenuta)
+        public function setSuccessfullSignUp($successfullSignUp)
         {
-            $this->registrazioneAvvenuta = $registrazioneAvvenuta;
+            $this->successfullSignUp = $successfullSignUp;
         }
         
         public function getNotAuthorized()

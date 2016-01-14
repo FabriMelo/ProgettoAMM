@@ -40,7 +40,7 @@ public function __constructor()
         
           case 'registrazioneAvvenuta':
         {
-            $this->set_RegistrazioneAvvenuta($view);
+            $this->set_SuccessfullSignUp($view);
             break;
         }
         
@@ -151,7 +151,7 @@ public function __constructor()
             require_once($view->getFooter());
         }
         
-           public function set_RegistrazioneAvvenuta($view){
+           public function set_SuccessfullSignUp($view){
           
             $view->setStartPage('./view/guest/startPage.php');
             require_once($view->getStartPage());
@@ -159,8 +159,8 @@ public function __constructor()
             $view->setHeader('./view/guest/header.php');
             require_once($view->getHeader());
             
-            $view->setRegistrazioneAvvenuta('./view/guest/registrazioneAvvenuta.php');
-            require_once($view->getRegistrazioneAvvenuta());
+            $view->setSuccessfullSignUp('./view/guest/successfullSignUp.php');
+            require_once($view->getSuccessfullSignUp());
             
             $view->setLeftBar('./view/guest/leftbar.php');
             require_once($view->getleftBar());
