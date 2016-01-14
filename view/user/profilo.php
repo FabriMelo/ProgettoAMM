@@ -7,8 +7,8 @@
             <?php  
         $username= $_SESSION['username']; 
         $db=  FantammDB::instance();
-        /*$query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= $username";*/
-        $query= "SELECT email,name FROM user WHERE username= 'Mario'";
+        $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= '$username'";
+       
         $result= $db->query($query);
         
         if($db->errno >0){
@@ -22,11 +22,11 @@
         {
          $email=$row[0];
          $name=$row[1];
-         /*$surname=$row[2];
+         $surname=$row[2];
          $street=$row[3];
          $number=$row[4];
          $city=$row[5];
-         $state=$row[6];*/
+         $state=$row[6];
          FantammDB::chiudiDB();
            }}
        ?>
@@ -34,7 +34,7 @@
             
             <p>Nome: <?php echo $name ?> </p>  
             <p>Email: <?php echo $email; ?></p>
-           <!-- <p>Indirizzo: <?php echo $street+" "+$number+", "+$city+", "+$state; ?></p> -->
+            <p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?></p> 
         </div>
     </div>
   </div>
