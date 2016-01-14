@@ -32,7 +32,7 @@
        ?>
             
             
-            <p>Nome: <?php echo $name ?> </p>  
+            <p>Nome: <?php echo $name." ".$surname ?> </p>  
             <p>Email: <?php echo $email; ?></p>
             <p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?></p> 
         </div>
