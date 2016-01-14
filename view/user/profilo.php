@@ -2,13 +2,13 @@
   <div id="content">
     <div id="columnA">
         <div class="content bg1">
-            <h2>Il tuo paaailo</h2>
+            <h2>Il tuo profilo</h2>
             
             <?php  
         $username= $_SESSION['username']; 
         $db=  FantammDB::instance();
         /*$query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= $username";*/
-        $query= "SELECT email FROM user WHERE username= 'Mario'";
+        $query= "SELECT email,name FROM user WHERE username= 'Mario'";
         $result= $db->query($query);
         
         if($db->errno >0){
@@ -21,8 +21,8 @@
         while($row= $result->fetch_row())
         {
          $email=$row[0];
-         /*$name=$row[1];
-         $surname=$row[2];
+         $name=$row[1];
+         /*$surname=$row[2];
          $street=$row[3];
          $number=$row[4];
          $city=$row[5];
@@ -32,8 +32,7 @@
        ?>
             
             
-            <p>Nome: <?php echo 'fin qui tutto bene'; ?></p>
-           <!-- <p>Cognome: <?php echo $surname; ?></p>  -->
+            <p>Nome: <?php echo $name ?> </p>  
             <p>Email: <?php echo $email; ?></p>
            <!-- <p>Indirizzo: <?php echo $street+" "+$number+", "+$city+", "+$state; ?></p> -->
         </div>
