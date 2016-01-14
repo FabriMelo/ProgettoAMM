@@ -5,9 +5,9 @@
             <h2>Il tuo profilo</h2>
             
             <?php  
-        $username= $_SESSION["username"]; 
+        $username= $_SESSION['username']; 
         $db=  FantammDB::instance();
-        $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= Mario";
+        $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= $username";
         $result= $db->query($query);
         
         if($db->errno >0){

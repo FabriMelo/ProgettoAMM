@@ -4,8 +4,8 @@
     <div id="columnA">
     <div class="content bg1">
         
-        <?php $id = $_REQUEST['id']; 
-         
+        <?php 
+        $id = $_REQUEST['id'];          
          $db=  FantammDB::instance();
         $query= "SELECT name,description,quantity FROM items WHERE id=$id";
         $result= $db->query($query);
