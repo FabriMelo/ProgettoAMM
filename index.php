@@ -78,7 +78,12 @@
                     {
                         $userController = new userController();
                         $result = $userController->signUp();
-                        echo $result;
+                        if ($result==1)
+                        {
+                         $controller = new guestController();
+                         $controller->handler('registrazioneAvvenuta');  
+                        }
+                       else echo 'Problemi con la registrazione';
                     }
                     
                     else if ($page['action'] == "aggiungiAlCarrello")
