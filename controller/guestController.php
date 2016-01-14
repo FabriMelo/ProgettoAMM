@@ -159,7 +159,7 @@ public function __constructor()
             $view->setHeader('./view/guest/header.php');
             require_once($view->getHeader());
             
-            $view->setRegistrazioneAvvenuta('./view/guest/products.php');
+            $view->setRegistrazioneAvvenuta('./view/guest/registrazioneAvvenuta.php');
             require_once($view->getRegistrazioneAvvenuta());
             
             $view->setLeftBar('./view/guest/leftbar.php');
