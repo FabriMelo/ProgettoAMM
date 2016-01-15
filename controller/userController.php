@@ -45,6 +45,7 @@ public function __constructor()
                     $_SESSION['loggedIn'] = false;
                     $_SESSION['username'] = '';
                     $this->set_Logout($view);
+                    header("location: home.php");
                     break;
                }
                
