@@ -68,6 +68,14 @@ public function __constructor()
             break;
         }
         
+         case 'logout':
+               {
+                    $_SESSION['loggedIn'] = false;
+                    $_SESSION['username'] = '';
+                    $this->set_Logout($view);
+                    break;
+               }
+        
         }
         
         
@@ -127,6 +135,24 @@ public function __constructor()
             
              $view->setLeftBar('./view/guest/leftbar.php');
             require_once($view->getleftBar());
+            
+            $view->setFooter('./view/guest/footer.php');
+            require_once($view->getFooter());
+        }
+        
+        public function set_Logout($view){
+          
+            $view->setStartPage('./view/guest/startPage.php');
+            require_once($view->getStartPage());
+            
+            $view->setHeader('./view/guest/header.php');
+            require_once($view->getHeader());
+            
+            $view->setLogout('./view/guest/logout.php');
+            require_once($view->getLogout());
+            
+            $view->setLeftBar('./view/guest/leftbar.php');
+            require_once($view->getLeftBar());
             
             $view->setFooter('./view/guest/footer.php');
             require_once($view->getFooter());
