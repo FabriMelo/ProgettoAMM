@@ -4,31 +4,31 @@
 
 function submitForm()
 { 
-    var xhr; 
-    try {  xhr = new ActiveXObject('Msxml2.XMLHTTP');   }
+    var http; 
+    try {  http = new ActiveXObject('Msxml2.XMLHTTP');   }
     catch (e) 
     {
-        try {   xhr = new ActiveXObject('Microsoft.XMLHTTP');    }
+        try {   http = new ActiveXObject('Microsoft.XMLHTTP');    }
         catch (e2) 
         {
-          try {  xhr = new XMLHttpRequest();     }
-          catch (e3) {  xhr = false;   }
+          try {  http = new XMLHttpRequest();     }
+          catch (e3) {  http = false;   }
         }
      }
    
-    xhr.onreadystatechange  = function()
+    http.onreadystatechange  = function()
     { 
-         if(xhr.readyState  == 4)
+         if(http.readyState  == 4)
          {
-              if(xhr.status  == 200) 
-                  document.ajax.dyn="Received:"  + xhr.responseText; 
+              if(http.status  == 200) 
+                  document.ajax.dyn="Received:"  + http.responseText; 
               else
-                 document.ajax.dyn="Error code " + xhr.status;
+                 document.ajax.dyn="Error code " + http.status;
          }
     }; 
  
-   xhr.open(GET, "data.txt",  true); 
-   xhr.send(null); 
+   http.open(GET, "data.txt",  true); 
+   http.send(null); 
 } 
 
 </script>
