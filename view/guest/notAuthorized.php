@@ -27,7 +27,7 @@ function submitForm()
          }
     }; 
  
-   http.open(GET, "data.txt",  true); 
+   http.open(GET, "index.php",  true); 
    http.send(null); 
 } 
 
