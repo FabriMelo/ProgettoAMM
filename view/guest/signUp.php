@@ -1,10 +1,12 @@
+<head><script src="js/validate.js"></script></head>
+
 <div id="content-wrap">
   <div id="content">
       <div id="columnA">
             <div class="content bg1">
              
                <h1>Registrati adesso!</h1>  
-<p>Tutti i campi sono obbligatori! (Almeno 4 caratteri)</p>  
+ 
 <form id="signUp" action="index.php?action=signup" method="post">  
 <ul>  
  
