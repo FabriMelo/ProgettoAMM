@@ -1,6 +1,6 @@
 <div id="header">
   <h1>CalciAMM</h1>
-  <h2>Proprio quello che aspettavi  </h2>
+  <h2>Proprio quello che aspettavi</h2>
 </div>
 <div id="menu">
   <ul>

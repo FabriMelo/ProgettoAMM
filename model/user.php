@@ -14,6 +14,9 @@
         private $_postalCode;
         private $_state;
         
+        
+        //Classe user, contiene dati e metodi dell'utente
+        
         function __construct()
         {
             

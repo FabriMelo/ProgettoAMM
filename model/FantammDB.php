@@ -2,6 +2,9 @@
 
 include_once "./settings.php";
 
+
+//La classe istanzia e chiude la connessione al database
+
 class FantammDB extends mysqli {
 	
 	private static $_instance = null;

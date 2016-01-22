@@ -4,6 +4,9 @@
     <div id="columnA">
     <div class="content bg1">
         
+       <!-- Stampa dell'immagine clickata tramite il passaggio del parametro id, che viene ricercato nel database   --> 
+        
+        
         <?php 
         $id = $_REQUEST['id'];          
          $db=  FantammDB::instance();

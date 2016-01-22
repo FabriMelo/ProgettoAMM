@@ -1,6 +1,9 @@
 <?php 
 include_once './view/createView.php';
 
+//Gestisce la scelta della pagina per il guest
+
+
 class guestController{
  
 public function __constructor()

@@ -7,7 +7,7 @@
  include_once './controller/userController.php';
  include_once './controller/guestController.php';
  
- //Create and ask for the page
+ //Creazione della pagina
   $Page = new Page();
   $Page->getPage($_REQUEST);
   
@@ -22,7 +22,7 @@
           if(!isset($page['page']) && !isset($page['action']) && !isset($page['print']))
             {
                 
-                // Check if the user is logged
+                // Controlla se l'user è loggato
                 if(Page::isLogged())
                 {
                     $controller = new userController();
@@ -41,7 +41,7 @@
                     $controller->printImg($page['print']);
             }
             
-           // If it has not been requested the default page
+           // Gestisce la richiesta di una pagina diversa dalla home
            else
            {
                 if(isset($page['page'])) 

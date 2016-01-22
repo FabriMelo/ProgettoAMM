@@ -1,7 +1,12 @@
+
+////Lo script si occupa di controllare la validità in tempo reale dei dati immessi dall'utente nel form di registrazione (pagina signup).
+//La variabile errors disabilita il pulsante di signUp se c'è qualche valore immesso che non rispetta i requisiti'
+
 var errors;
 
 function checkField(id, value) {
-    
+  
+//Messaggi d'errore che appariranno nel form, al di sopra dei rispettivi campi  
     errors=0;
     var pass;
     var p = document.getElementById(id+"_error");
@@ -14,6 +19,8 @@ function checkField(id, value) {
     var confirm = document.createTextNode("Errore! I campi Password e Confirm devono contenere lo stesso valore!");
     var password = document.createTextNode("Errore! I campi Password e Confirm devono contenere lo stesso valore!");
     
+    
+ //Lo switch assegna ad ogni campo il rispettivo errore, dopo aver controllato in tempo reale il dato immesso dall'utente'
     switch(id){
      
         
@@ -129,6 +136,8 @@ function checkField(id, value) {
       checkErrors('submit_registration');
     }
 
+
+//la funzione  disabilita il pulsante di signup se la variabile errors è maggiore di zero
    function checkErrors(id){
        var e = document.getElementById(id);
        e.disabled=false;

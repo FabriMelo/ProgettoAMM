@@ -3,6 +3,9 @@
 include_once './model/user.php';
 include_once './model/FantammDB.php';
 
+//Contiene i metodiche si occupano della gestione delle query per l'inserimento e la ricerca degli utenti nel database, con 
+// particolare attenzione alla sql injection
+
 class usersDB
 {
 

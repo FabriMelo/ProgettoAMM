@@ -1,10 +1,12 @@
 <div id="content-wrap">
   <div id="content">
     <div id="columnA">
-        <div class="content bg1">
+        <div class="content bg1">   
             <h2>Il tuo profilo</h2>
             
-            <?php  
+    <!-- Vengono stampate le informazioni riguardanti lo user che ha attualmente effettuato l'accesso, tramite ricerca nel database -->        
+           
+ <?php  
         $username= $_SESSION['username']; 
         $db=  FantammDB::instance();
         $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= '$username'";

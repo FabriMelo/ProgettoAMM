@@ -3,6 +3,9 @@ include_once './view/createView.php';
 include_once './model/FantammDB.php';
 include_once './model/usersDB.php';
 
+
+//Gestisce la scelta della pagina per lo user, più qualche funzione
+
 class userController{
  
 public function __constructor()
@@ -177,23 +180,8 @@ public function __constructor()
             require_once($view->getFooter());
         }
         
-       /* //$_POST contiene i dati passati dal form di login del guest content. Viene verificata la validità nel database,
-        //e in caso positivo, $_SESSION["loggedIn"] prende vero
-        public function login()
-        {
-            //$exist = userDB::instance()->existUser($_POST['username'], $_POST['password']);
-            if(true)
-            {
-                 $_SESSION["loggedIn"] = true;
-                 $_SESSION["username"] = $_POST['username'];
-                 unset($_POST['username']);
-                 unset($_POST['password']);
-                 return true;
-            }
-            
-            return false;
-        }*/
-        
+  
+  //Funzione di login; prende dati dalla post e li invia al metodo existuser      
         public function login()
         {
             $exist = usersDB::instance()->existUser($_POST['username'], $_POST['password']);
@@ -209,7 +197,9 @@ public function __constructor()
             
             return false;
         }
+   
         
+    //Funzione di signup; controlla la validità effettiva dei valori immessi dall utente
         public function signUp()
         {
             $user = new user();            

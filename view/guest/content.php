@@ -30,9 +30,9 @@
           	<div id="Galleria">
                         <img title="milan" alt="Foto" src="images/milan.jpg" width="140" height="140"/>
                    
-                        <img title="milan" alt="Foto" src="images/italia.jpg" width="140" height="140"/>
+                        <img title="italia" alt="Foto" src="images/italia.jpg" width="140" height="140"/>
                     
-                        <img title="milan" alt="Foto" src="images/scarpa2.jpg" width="140" height="140"/>
+                        <img title="scarpa" alt="Foto" src="images/scarpa2.jpg" width="140" height="140"/>
                    
                    
       </div>
