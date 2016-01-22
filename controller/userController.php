@@ -48,6 +48,8 @@ public function __constructor()
                     $_SESSION['loggedIn'] = false;
                     $_SESSION['username'] = '';
                     $this->set_Logout($view);
+                    $newpage = 'http://spano.sc.unica.it/amm2015/meloniFabrizio/index.php?page=home';
+                    header('Refresh: 3; url=' . $newpage);
                     break;
                }
                
