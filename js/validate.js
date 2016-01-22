@@ -11,13 +11,13 @@ function checkField(id, value) {
     var pass;
     var p = document.getElementById(id+"_error");
     var x = document.createElement("SPAN");
-    var quattro = document.createTextNode("Errore! Il campo "+id+" deve essere lungo almeno 4 caratteri!");
-    var stato = document.createTextNode("Errore! Il campo "+id+" richiede la sigla di due lettere!");
-    var postal = document.createTextNode("Errore! Il campo Postal Code richiede 5 cifre!");
-    var numero = document.createTextNode("Errore! Il campo Numero richiede solo cifre numeriche!");
-    var email = document.createTextNode("Errore! Il campo Email richiede un indirizzo email valido!");
-    var confirm = document.createTextNode("Errore! I campi Password e Confirm devono contenere lo stesso valore!");
-    var password = document.createTextNode("Errore! I campi Password e Confirm devono contenere lo stesso valore!");
+    var quattro = document.createTextNode(" Errore! Il campo "+id+" deve essere lungo almeno 4 caratteri!");
+    var stato = document.createTextNode(" Errore! Il campo "+id+" richiede la sigla di due lettere!");
+    var postal = document.createTextNode(" Errore! Il campo Postal Code richiede 5 cifre!");
+    var numero = document.createTextNode(" Errore! Il campo Numero richiede solo cifre numeriche!");
+    var email = document.createTextNode(" Errore! Il campo Email richiede un indirizzo email valido!");
+    var confirm = document.createTextNode(" Errore! I campi Password e Confirm devono contenere lo stesso valore!");
+    var password = document.createTextNode(" Errore! I campi Password e Confirm devono contenere lo stesso valore!");
     
     
  //Lo switch assegna ad ogni campo il rispettivo errore, dopo aver controllato in tempo reale il dato immesso dall'utente'
