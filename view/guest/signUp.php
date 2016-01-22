@@ -12,8 +12,7 @@
  
     
                  
-               <h1>Registrati adesso!</h1>  
-               <p id="errori"></p>
+               
                         
 <form id="signUp" action="index.php?action=signup" method="post">  
 <ul>  
